@@ -34,5 +34,6 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: "zoo1:2181,zoo2:2181,zoo3:2181/wut/kafka"
     depends_on: [zoo1, zoo2, zoo3]
 
-  # producer:
-  # consumer:
+  dotnet:
+    build:
+      context: Kafka
